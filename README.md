@@ -14,18 +14,19 @@ AWS Glue Crawler is configured to automatically discover and catalog metadata ab
 Catalog tables are created in the AWS Glue Data Catalog, enabling structured access to the ingested data.
 These cataloged tables provide a clear schema for the data, making it easier to work with during transformations.
 
-![Buckets](./Screenshots/Data_catalog.JPG)
+![Data Catalog](./Screenshots/Data_catalog.JPG)
 
 **3. Data Transformation:**
 
 An AWS Glue Job is designed to perform data transformations based on specific requirements.
 The Glue Job uses the source data, selects relevant fields, and filters data based on countries, focusing on records from Pakistan and Australia.
 
-![Buckets](./Screenshots/Transformation.JPG)
+![Data Transformation](./Screenshots/Transformation.JPG)
 
 **4. Data Loading:**
 
 The transformed data is loaded into a target S3 bucket, creating a refined dataset that is ready for further analysis or consumption.
+![Target Bucket](./Screenshots/target.JPG)
 
 
 
@@ -34,3 +35,6 @@ The transformed data is loaded into a target S3 bucket, creating a refined datas
 AWS Lambda is employed to automate and orchestrate the entire data transformation process.
 Lambda functions trigger the Glue Job, ensuring that data processing occurs promptly after new uploads.
 This automated workflow optimizes efficiency and minimizes manual intervention.
+
+![Lambda Trigger](./Screenshots/lambda_trigger.JPG)
+
