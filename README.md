@@ -7,8 +7,6 @@
 Raw data in CSV format is uploaded to an Amazon S3 bucket, serving as the initial data source.
 AWS Glue Crawler is configured to automatically discover and catalog metadata about the newly uploaded CSV files, making them accessible for further processing.
 
-![buckets](https://github.com/tahajavedan1/AWS_Glue_End_to_End_Project/assets/140393211/1897611a-2533-45e4-960f-c9eba28acce3)
-
 **2. Data Cataloging:**
 
 Catalog tables are created in the AWS Glue Data Catalog, enabling structured access to the ingested data.
